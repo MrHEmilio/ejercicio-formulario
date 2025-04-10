@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function (event) {
     const encabezadoH2 = document.getElementById("encabezado-cambiante");
     const inputName = document.getElementById("user-name");
     const btnGuardar = document.getElementById("btn-guardar");
@@ -29,4 +28,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
              encabezadoH2.innerHTML = "Por favor, ve a la página de inicio e ingresa tu nombre";
          }
 }
-});
