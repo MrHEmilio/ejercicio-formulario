@@ -7,17 +7,17 @@
             event.preventDefault();
             localStorage.setItem("user-name", inputName.value);
             alert("Nombre guardado correctamente");
-            console.log(`Nombre guardado; ${inputName.value}`);
-            // encabezadoH2.innerHTML = `Hola, ${inputName.value}. Bienvenido de nuevo!`; 
-            //Esta wea no funcionó pero no sé por qué así que lo hice nuevamente en un if hasta abajo
-        });
+            console.log(`Nombre guardado: ${inputName.value}`);
+            });
     }
     if (btnEliminar) {
+        
         btnEliminar.addEventListener("click", function (event) {
             event.preventDefault();
             localStorage.removeItem("user-name");
             alert("Nombre eliminado correctamente");
-            encabezadoH2.innerHTML = "Por favor, ve a la página de inicio e ingresa tu nombre";
+            console.log(`Sin nombre registrado`);
+            encabezadoH2.innerHTML = "Oops! Ya no te reconozco";
         });
     }
      if (encabezadoH2) {
